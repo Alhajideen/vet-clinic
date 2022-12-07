@@ -1,19 +1,66 @@
-# curriculum-databases-projects-template
+<a name="readme-top"></a>
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+<div align="center">
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
+  <h3><b>VET CLINIC</b></h3>
 
-## Getting Started
+</div>
 
-This repository includes files with plain SQL that can be used to recreate a database:
+# 📗 Table of Contents
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
+# 📖 Vet Clinic <a name="about-project"></a>
 
-## Authors
+> **[VET CLINIC]** is an educational project. This is used to learn SQL queries. In this project, I have performed CRUD operations using basic Postgresql.
+
+## 🛠 Built With <a name="built-with">Postgresql</a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Database
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- **Create table and Insert Data**
+- **Update Table**
+- **Delete table**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Prerequisites
+
+In order to run this project you need: pgAdmin and SQL shell
+
+### Setup
+
+Clone this repository to your desired folder:
+
+run: `git clone https://github.com/Alhajideen/vet-clinic`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Author1**
 
@@ -21,22 +68,37 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@Alhaji_deen1](https://twitter.com/Alhaji_deen1)
 - LinkedIn: [Deen](https://linkedin.com/in/nurudeen-salifu-776753244)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Alhajideen/vet-clinic/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+## ⭐️ Show your support <a name="support"></a>
 
-## Acknowledgments
+If you like this project, kindly leave a star! 
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📝 License
+## ❓ FAQ <a name="faq"></a>
 
-This project is [MIT](./MIT.md) licensed.
+- **What language was used?**
+
+  - The language used for this project is Structured Query Language(SQL).
+
+- **What command can i use to clone?**
+
+  - On your terminal run `git clone https://github.com/Alhajideen/vet-clinic`
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
