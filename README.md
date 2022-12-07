@@ -62,8 +62,6 @@ run: `git clone https://github.com/Alhajideen/vet-clinic`
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [@Alhajideen](https://github.com/Alhajideen)
@@ -82,15 +80,11 @@ Feel free to check the [issues page](https://github.com/Alhajideen/vet-clinic/is
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project, kindly leave a star! 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **What language was used?**
 
