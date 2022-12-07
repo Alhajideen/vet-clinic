@@ -25,9 +25,7 @@
 
 # 📖 Vet Clinic <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[VET CLINIC]** is an educational project. This is used to learn SQL queries. In this project, I have performed CRUD operations using basic Postgresql.
+> **[VET CLINIC]** is an educational project. This is used to learn SQL queries. In this project, I have performed CRUD operations using basic Postgresql.
 
 ## 🛠 Built With <a name="built-with">Postgresql</a>
 
