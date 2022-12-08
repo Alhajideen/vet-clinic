@@ -92,3 +92,13 @@ WHERE name IN ('Charmander','Squirtle','Blossom');
 UPDATE animals
 SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
 WHERE name IN ('Devimon','Plantmon');
+
+-- DAY 4
+
+-- Insert into vets TABLE
+INSERT INTO vets (name, age, date_of_graduation) 
+VALUES 
+('William Tatcher', 45, '04-23-2000'),
+('Maisy Smith', 26, '01-17-2019'),
+('Stephanie Mendez', 64, '05-04-1981'),
+('Jack Harkness', 38, '06-08-2008');
