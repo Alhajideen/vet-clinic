@@ -122,3 +122,5 @@ COUNT(a.owner_id)
 FROM animals a
 INNER JOIN owners o ON o.id = a.owner_id
 GROUP BY o.full_name;
+
+-- DAY 4
