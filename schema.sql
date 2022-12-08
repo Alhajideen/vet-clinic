@@ -11,3 +11,12 @@ CREATE TABLE animals (
 
 ALTER TABLE animals
 ADD species varchar(100);
+
+-- DAY 3
+CREATE TABLE owners(
+id INT GENERATED ALWAYS AS IDENTITY
+(START WITH 1 INCREMENT BY 1),
+full_name VARCHAR(100),
+age INT,
+PRIMARY KEY(id)
+);
