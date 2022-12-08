@@ -35,3 +35,22 @@ ALTER COLUMN id TYPE INT GENERATED ALWAYS AS IDENTITY
 
 ALTER TABLE animals
 DROP COLUMN species;
+
+-- ADD species_id column
+ALTER TABLE animals
+ADD COLUMN species_id INT;
+
+-- ADD owner_id column
+ALTER TABLE animals
+ADD COLUMN owner_id INT;
+
+-- ADD FOREIGN KEY CONSTRAINTS
+ALTER TABLE animals
+ADD CONSTRAINT fk_species
+FOREIGN KEY(species_id) 
+REFERENCES species(id);
+
+ALTER TABLE animals
+ADD CONSTRAINT fk_owner
+FOREIGN KEY(owner_id) 
+REFERENCES owners(id);
