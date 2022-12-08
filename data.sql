@@ -39,3 +39,56 @@ VALUES
 (9,'Boarmon','2005-06-07',20.4,true,7),
 (10,'Blossom','1998-10-13',17,true,3),
 (11,'Ditto','2002-05-14',22,true,4);
+
+-- DAY 3
+
+-- INSER DATA IN owners TABLE
+
+INSERT INTO owners 
+(id,full_name,age)
+VALUES
+(DEFAULT,'Sam Smith',34),
+(DEFAULT,'Jennifer Orwell',19),
+(DEFAULT,'Bob',45),
+(DEFAULT,'Melody Pond',77),
+(DEFAULT,'Dean Winchester',14),
+(DEFAULT,'Jodie Whittaker',38);
+
+-- INSERT DATA IN Digimon TABLE
+
+INSERT INTO species
+(id,name)
+VALUES
+(DEFAULT, 'Pokemon'),
+(DEFAULT, 'Digimon');
+
+-- UPDATE species_id column
+
+UPDATE animals
+SET species_id = 2
+WHERE name Like '%mon'
+
+UPDATE animals
+SET species_id=1
+WHERE species_id IS NULL;
+
+-- UPDATE owners_id column
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name IN ('Agumon');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name IN ('Gabumon','Pikachu');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name IN ('Angemon','Boarmon');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name IN ('Charmander','Squirtle','Blossom');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name IN ('Devimon','Plantmon');
