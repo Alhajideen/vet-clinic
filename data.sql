@@ -45,6 +45,7 @@ VALUES
 -- INSER DATA IN owners TABLE
 
 INSERT INTO owners 
+(id,full_name,age)
 VALUES
 (DEFAULT,'Sam Smith',34),
 (DEFAULT,'Jennifer Orwell',19),
@@ -56,6 +57,7 @@ VALUES
 -- INSERT DATA IN Digimon TABLE
 
 INSERT INTO species
+(id,name)
 VALUES
 (DEFAULT, 'Pokemon'),
 (DEFAULT, 'Digimon');
