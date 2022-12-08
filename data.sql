@@ -59,3 +59,34 @@ INSERT INTO species
 VALUES
 (DEFAULT, 'Pokemon'),
 (DEFAULT, 'Digimon');
+
+-- UPDATE species_id column
+
+UPDATE animals
+SET species_id = 2
+WHERE name Like '%mon'
+
+UPDATE animals
+SET species_id=1
+WHERE species_id IS NULL;
+
+-- UPDATE owners_id column
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name IN ('Agumon');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name IN ('Gabumon','Pikachu');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name IN ('Angemon','Boarmon');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name IN ('Charmander','Squirtle','Blossom');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name IN ('Devimon','Plantmon');
