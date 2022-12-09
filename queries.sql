@@ -132,12 +132,13 @@ WHERE vets.id = 1 ORDER BY date_of_visit desc
 LIMIT 1;
 
 -- How many different animals did Stephanie Mendez see?
-SELECT COUNT(DISTINCT animals.name) FROM animals
-JOIN owners ON animals.owner_id = owners.id
-WHERE owners.full_name = 'Stephanie Mendez';
+SELECT COUNT (DISTINCT animals.name) AS animals, 
+vets.name AS vet_name FROM visits JOIN animals 
+ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id 
+WHERE vets.id = 3 GROUP BY vets.name;
 
 -- List all vets and their specialties, including vets with no specialties.
-SELECT vets.name AS vet_name, species.name AS species FROM specializations 
+SELECT vets AS vet_name, species.name AS species FROM specializations 
 RIGHT JOIN vets ON vets.id = specializations.vets_id 
 LEFT JOIN species ON species.id = specializations.species_id;
 
@@ -150,7 +151,7 @@ WHERE vets_id = 3 AND  date_of_visit BETWEEN '2020-04-01' AND '2020-08-20';
 -- What animal has the most visits to vets?
 SELECT animals.name, COUNT (animals_id) AS visits FROM visits 
 JOIN animals ON animals.id = visits.animals_id 
-JOIN vets ON vets.id = visits.vets_id GROUP BY animals.name 
+GROUP BY animals.name
 ORDER BY visits DESC LIMIT 1;
 
 -- Who was Maisy Smith's first visit?
