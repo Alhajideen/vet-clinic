@@ -90,4 +90,5 @@ FOREIGN KEY (vets_id)
 REFERENCES vets(id)
 );
 
-
+-- WEEK 2
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
