@@ -181,3 +181,14 @@ JOIN species ON species.id = animals.species_id
 JOIN vets ON vets.id = visits.vets_id
 WHERE vets_id=2
 GROUP BY species.name LIMIT 1;
+
+-- WEEK 2
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+-- Create Indexes
+CREATE INDEX visits_animals ON visits(animals_id ASC);
+CREATE INDEX visits_vets ON visits(vets_id ASC);
+CREATE INDEX owner_email ON owners(email);
